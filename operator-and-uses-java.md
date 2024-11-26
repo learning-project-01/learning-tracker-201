@@ -1,13 +1,13 @@
-###Types of Operators in Java
-Arithmetic Operators
-Relational (Comparison) Operators
-Logical Operators
-Bitwise Operators
-Assignment Operators
-Unary Operators
-Ternary (Conditional) Operator
-Instanceof Operator
-1. Arithmetic Operators
+### Types of Operators in Java
+- Arithmetic Operators
+- Relational (Comparison) Operators
+- Logical Operators
+- Bitwise Operators
+- Assignment Operators
+- Unary Operators
+- Ternary (Conditional) Operator
+- Instanceof Operator
+**1. Arithmetic Operators**
 Used for mathematical calculations.
 
 Operator	Description	Example
