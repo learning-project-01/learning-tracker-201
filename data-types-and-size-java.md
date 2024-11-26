@@ -37,7 +37,7 @@ In java data types are devided into two main catagories
 
 ---
 
-**2. Non-Primitive Data Types**
+###**2. Non-Primitive Data Types**
 - These include classes, arrays, interfaces, and more. They don’t have fixed sizes as they depend on the 
   implementation and content.
 
