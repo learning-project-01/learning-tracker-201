@@ -60,3 +60,20 @@ In java data types are devided into two main catagories
 - **Wrapper Classes**: Each primitive type has a corresponding wrapper class (e.g., Integer for int, Double for 
   double). Wrapper classes allow primitives to be treated as objects, which is useful in collections like 
   ArrayList.
+
+---
+
+### **2. Key Features of Non-Primitive Data Types**
+
+- **Dynamic Sizes**: Their memory usage depends on the content or data stored, making them more flexible than 
+  primitive types.
+
+- **Null Initialization**: Non-primitive variables default to null if not explicitly initialized.
+
+- **Inheritance**: Non-primitive types like classes and interfaces support inheritance and polymorphism.
+
+- **Heap Allocation**: Non-primitive objects are stored in the heap memory, while their references are stored in 
+  the stack memory.
+
+- **Garbage Collection**: Java automatically manages memory for non-primitive types through garbage collection 
+  (unused objects are cleaned up).  
