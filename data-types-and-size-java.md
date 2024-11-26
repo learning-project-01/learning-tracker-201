@@ -21,4 +21,24 @@ In java data types are devided into two main catagories
 
 **float**
 - Stores fractional numbers, single-precision. **size :** 	4 bytes (32 bits).
-- -	example: float e = 5.75f;
+-	example: float e = 5.75f;
+
+**double**
+- Stores fractional numbers, double-precision. **size :** 	8 bytes (64 bits).
+- example: double f = 19.99;
+
+**char**  
+- Stores a single character (Unicode). **size :**  2 bytes (16 bits).
+- example: char g = 'A';
+
+**boolean** 
+- Stores true/false values. **size :** 1 bit.
+- example: boolean h = true;
+
+---
+
+**2. Non-Primitive Data Types**
+- These include classes, arrays, interfaces, and more. They don’t have fixed sizes as they depend on the 
+  implementation and content.
+
+    
