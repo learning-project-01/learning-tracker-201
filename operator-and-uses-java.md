@@ -7,9 +7,8 @@
 - Unary Operators
 - Ternary (Conditional) Operator
 - Instanceof Operator
-**1. Arithmetic Operators**
+### **1. Arithmetic Operators**
 Used for mathematical calculations.
-
 Operator	Description	Example
 +	Addition	int sum = a + b;
 -	Subtraction	int diff = a - b;
