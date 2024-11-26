@@ -40,5 +40,23 @@ In java data types are devided into two main catagories
 ### **2. Non-Primitive Data Types**
 - These include classes, arrays, interfaces, and more. They don’t have fixed sizes as they depend on the 
   implementation and content.
-
-    
+- Non-primitive data types, also known as reference types.They don't store actual data directly; instead, they 
+  store a reference (memory address) to the data. The actual data resides in a specific memory location (the 
+  heap).
+  
+- **example**:
+- **Classes**: A class is a blueprint for creating objects.It can include fields (variables) and methods 
+  (functions).
+  
+- **Arrays**: An array is a collection of elements of the same data type.The size of the array depends on the 
+  number of elements it holds.
+  
+- **Interfaces**: An interface is like a contract. It defines a set of methods that a class must implement but 
+  doesn’t provide the method's actual code.It is used for achieving abstraction and multiple inheritance.
+  
+- **Strings**: Strings are objects in Java, even though they behave like primitive types.A string represents a 
+  sequence of characters.
+  
+- **Wrapper Classes**: Each primitive type has a corresponding wrapper class (e.g., Integer for int, Double for 
+  double). Wrapper classes allow primitives to be treated as objects, which is useful in collections like 
+  ArrayList.
