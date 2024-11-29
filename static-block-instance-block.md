@@ -2,8 +2,26 @@
 - The static block is used to initialize a static variable.
 - The static block runs only once, when the class is loaded.
 - You don't need to create an object of the class for the static block to execute.
+  
 **example**
-src/InstanceExample.java
+```java
+public class StaticExample
+{
+    static int staticVariable;
+
+    // Static block
+    static
+    {
+        staticVariable = 42;
+        System.out.println("Static block executed. Static variable initialized.");
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println("Static Variable: " + staticVariable);
+    }
+}
+```
 ### Note
 #### **class is loadded:**
 - The .class file is read by the JVM, and its bytecode is loaded into memory.
