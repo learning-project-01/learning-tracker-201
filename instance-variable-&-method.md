@@ -10,21 +10,20 @@
       {
          // Instance variable
          String name;
-
-         public static void main(String[] args)
+          public static void main(String[] args)
           {
-           // Creating objects
-            InstanceVariableExample obj1 = new InstanceVariableExample();
-            InstanceVariableExample obj2 = new InstanceVariableExample();
+             // Creating objects
+             InstanceVariableExample obj1 = new InstanceVariableExample();
+             InstanceVariableExample obj2 = new InstanceVariableExample();
 
-            // Assigning values to instance variables
-            obj1.name = "Alice";
-            obj2.name = "Bob";
+             // Assigning values to instance variables
+             obj1.name = "Alice";
+             obj2.name = "Bob";
 
-           // Accessing instance variables
-           System.out.println("Object 1 Name: " + obj1.name); // Output: Alice
-           System.out.println("Object 2 Name: " + obj2.name); // Output: Bob
-         }
+             // Accessing instance variables
+             System.out.println("Object 1 Name: " + obj1.name); // Output: Alice
+             System.out.println("Object 2 Name: " + obj2.name); // Output: Bob
+          }
       }
   
 ### Instance Method
@@ -36,34 +35,34 @@
   ```java
      public class InstanceMethodExample
      {
-        // Instance variable
+           // Instance variable
            int age;
 
-        // Instance method
-        public void setAge(int newAge)
-        {
-           age = newAge; // Modifying the instance variable
-        }
+           // Instance method
+           public void setAge(int newAge)
+           {
+             age = newAge; // Modifying the instance variable
+           }
+           public int getAge()
+           {
+             return age; // Accessing the instance variable
+           }
 
-        public int getAge()
-        {
-          return age; // Accessing the instance variable
-        }
+           public static void main(String[] args)
+           {
+               // Creating an object
+               InstanceMethodExample person = new InstanceMethodExample();
 
-        public static void main(String[] args)
-        {
-           // Creating an object
-           InstanceMethodExample person = new InstanceMethodExample();
+               // Using instance method to set age
+               person.setAge(25);
 
-           // Using instance method to set age
-           person.setAge(25);
-
-           // Using instance method to get age
-           System.out.println("Person's Age: " + person.getAge()); // Output: 25
-        }
+              // Using instance method to get age
+              System.out.println("Person's Age: " + person.getAge()); // Output: 25
+           }
      }
 ```
 
+---
 ### NOTE
 
 **1.Class**
@@ -74,10 +73,11 @@
  **example**
  ```java
 - Imagine you're an architect designing a house.
-- The blueprint contains details about the structure of the house: number of rooms, size, type of windows, etc.
+- The blueprint contains details about the structure of the house:
+   number of rooms, size, type of windows, etc.
 - However, the blueprint itself is not a house—it’s just a template for creating houses.
 - Once a builder constructs houses based on the blueprint, those are the actual houses (objects).
-// Class is the blueprint
+
 public class House
 {
     // Attributes (properties)
@@ -116,9 +116,10 @@ public class Main
 
  **example**
  ```java
-- Object (Instance): A car you drive (e.g., a red Tesla Model 3) is an object created from this prototype. Each car (object) has specific 
-  values for its properties (like color and model) but follows the structure defined by the prototype (class).
-// Class definition
+- Object (Instance): A car you drive (e.g., a red Tesla Model 3) is an object created from this prototype.
+- Each car (object) has specific values for its properties (like color and model) but follows the structure
+   defined by the prototype (class).
+
 public class Car
 {
     // Attributes (properties)
@@ -161,28 +162,29 @@ public class Main
   **example**
  ```java
   public class Calculator
-{
-    // Method to add two numbers
-    int add(int a, int b)
-    {
+  {
+      // Method to add two numbers
+      int add(int a, int b)
+      {
         return a + b; // Returning the sum
-    }
+      }
 
-    public static void main(String[] args)
-    {
-        // Creating an object of the Calculator class
-        Calculator calc = new Calculator();
+      public static void main(String[] args)
+      {
+         // Creating an object of the Calculator class
+         Calculator calc = new Calculator();
 
-        // Calling the method and printing the result
-        int result = calc.add(5, 10);
-        System.out.println("Sum: " + result); // Output: Sum: 15
-    }
-}
+         // Calling the method and printing the result
+         int result = calc.add(5, 10);
+         System.out.println("Sum: " + result); // Output: Sum: 15
+      }
+   }
 ```
 **4.Constructor**
 - A constructor is a special method used to initialize an object.
 - It has the same name as the class and does not have a return type.
 - A constructor is called automatically when an object is created.
+  
 **Types of Constructors:**
 - Default Constructor: No arguments, provided by the compiler if not defined.
 - Parameterized Constructor: Takes arguments to initialize object attributes.
