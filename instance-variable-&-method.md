@@ -28,7 +28,7 @@
       }
   . Stores data unique to each object.
   . Example: In a class Student, name and rollNumber can be instance variables to store details of each student.
-    
+ 
 ### Instance Method
 - An instance method is a method that operates on instance variables of a class.
 - It can access and modify instance variables.
