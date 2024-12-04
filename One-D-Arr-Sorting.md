@@ -45,3 +45,35 @@ public class InsertionSort
 }
 ```
 ### Bubble sort
+**example**
+```java
+public class BubbleSort
+{
+    public static void bubbleSort(int[] arr)
+    {
+        for(int i=0;i<arr.length-1;i++)
+        {
+            int j=0;
+            while(j<arr.length-1-i)
+            {
+               if(arr[j] > arr[j+1])
+               {
+
+                 int store_swap_value = arr[j];
+                 arr[j]= arr[j+1];
+                 arr[j+1] = store_swap_value ;
+               }
+            }
+        } 
+
+    }
+ 
+   public static void main(string[]args)
+   {
+     int arr[] = {5,2,1,0,3,6}
+     bubbleSort(arr);
+     
+   }
+
+
+}
