@@ -151,7 +151,7 @@ public class BubbleSort
   ### MergeSort
   
   **example**
-  ```
+  ```java
   public class MergeSort
   {
     public static void main(String[] args)
@@ -249,5 +249,6 @@ public class BubbleSort
         System.out.println();
     }
 }
-```
+
+
   
