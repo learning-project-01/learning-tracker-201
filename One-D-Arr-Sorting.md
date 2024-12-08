@@ -19,17 +19,17 @@ public class InsertionSort
         // traverse array
         for (int i = 1; i < n; i++)
         {
-            int sorted_part = arr[i]; // store 1st index to the sorted_part variable
+            int sortedPart = arr[i]; // store 1st index to the sorted_part variable
             int j = i - 1; // initalize j index brfore i index
 
            // check if jth index value is greater than sorted_part variable
-            while (j >= 0 && arr[j] > sorted_part)
+            while (j >= 0 && arr[j] > sortedPart)
             { 
                 arr[j + 1] = arr[j]; // if yes the swap index 
                 j--; 
             }
 
-            arr[j + 1] = sorted_part;
+            arr[j + 1] = sortedPart;
         }
     }
 
@@ -59,9 +59,9 @@ public class BubbleSort
                if(arr[j] > arr[j+1])
                {
 
-                 int store_swap_value = arr[j];
+                 int temp = arr[j];
                  arr[j]= arr[j+1];
-                 arr[j+1] = store_swap_value ;
+                 arr[j+1] = temp ;
                }
               j++;
             }
@@ -124,13 +124,13 @@ public class BubbleSort
           {
              // Find the minimum element in the unsorted part
               int minIndex = i;
-             for (int j = i + 1; j < n; j++)
-             {
+              for (int j = i + 1; j < n; j++)
+              {
                   if (arr[j] < arr[minIndex])
                   {
                      minIndex = j; // Update the index of the smallest element
                   }
-             }
+              }
 
               // Swap the found minimum element
               int temp = arr[minIndex];
