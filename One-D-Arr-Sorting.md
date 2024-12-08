@@ -19,17 +19,16 @@ public class InsertionSort
         // traverse array
         for (int i = 1; i < n; i++)
         {
-            int sortedPart = arr[i]; // store 1st index to the sorted_part variable
-            int j = i - 1; // initalize j index brfore i index
+          int sortedPart = arr[i]; // store 1st index to the sorted_part variable
+          int j = i - 1; // initalize j index brfore i index
 
-           // check if jth index value is greater than sorted_part variable
-            while (j >= 0 && arr[j] > sortedPart)
-            { 
-                arr[j + 1] = arr[j]; // if yes the swap index 
-                j--; 
-            }
-
-            arr[j + 1] = sortedPart;
+          // check if jth index value is greater than sorted_part variable
+          while (j >= 0 && arr[j] > sortedPart)
+          { 
+             arr[j + 1] = arr[j]; // if yes the swap index 
+             j--; 
+          }
+          arr[j + 1] = sortedPart;
         }
     }
 
@@ -53,20 +52,18 @@ public class BubbleSort
     {
         for(int i=0;i<arr.length-1;i++)
         {
-            int j=0;
-            while(j<arr.length-1-i)
+          int j=0;
+          while(j<arr.length-1-i)
+          {
+            if(arr[j] > arr[j+1])
             {
-               if(arr[j] > arr[j+1])
-               {
-
-                 int temp = arr[j];
-                 arr[j]= arr[j+1];
-                 arr[j+1] = temp ;
-               }
-              j++;
+              int temp = arr[j];
+              arr[j]= arr[j+1];
+              arr[j+1] = temp ;
             }
+            j++;
+          }
         } 
-
     }
  
    public static void main(string[]args)
