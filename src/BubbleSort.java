@@ -12,9 +12,9 @@ public class BubbleSort
                 if(arr[j] > arr[j+1])
                 {
 
-                    int store_swap_value = arr[j];
+                    int temp = arr[j];
                     arr[j]= arr[j+1];
-                    arr[j+1] = store_swap_value ;
+                    arr[j+1] = temp ;
                 }
                 j++;
             }
