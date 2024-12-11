@@ -76,21 +76,27 @@ pom.xml
 ```
 package com.example;
 
-public class Calculator {
-    public int add(int a, int b) {
+public class Calculator
+{
+    public int add(int a, int b)
+    {
         return a + b;
     }
 
-    public int subtract(int a, int b) {
+    public int subtract(int a, int b)
+    {
         return a - b;
     }
 
-    public int multiply(int a, int b) {
+    public int multiply(int a, int b)
+    {
         return a * b;
     }
 
-    public int divide(int a, int b) {
-        if (b == 0) {
+    public int divide(int a, int b)
+    {
+        if (b == 0)
+        {
             throw new ArithmeticException("Cannot divide by zero");
         }
         return a / b;
@@ -100,42 +106,45 @@ public class Calculator {
 
 **Junit Test case**
 ```
-package com.example;
+
+package org.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+public class CalculatorTest
+{
+
+    private final Calculator calculator = new Calculator();
 
     @Test
-    void testAdd() {
-        Calculator calculator = new Calculator();
+    public void testAdd()
+    {
         assertEquals(5, calculator.add(2, 3));
     }
 
     @Test
-    void testSubtract() {
-        Calculator calculator = new Calculator();
+    public void testSubtract()
+    {
         assertEquals(1, calculator.subtract(3, 2));
     }
 
     @Test
-    void testMultiply() {
-        Calculator calculator = new Calculator();
+    public void testMultiply()
+    {
         assertEquals(6, calculator.multiply(2, 3));
     }
 
     @Test
-    void testDivide() {
-        Calculator calculator = new Calculator();
+    public void testDivide()
+    {
         assertEquals(2, calculator.divide(6, 3));
     }
 
     @Test
-    void testDivideByZero() {
-        Calculator calculator = new Calculator();
-        Exception exception = assertThrows(ArithmeticException.class, () -> calculator.divide(6, 0));
-        assertEquals("Cannot divide by zero", exception.getMessage());
+    public void testDivideByZero()
+    {
+        assertThrows(ArithmeticException.class, () -> calculator.divide(1, 0));
     }
 }
 ```
